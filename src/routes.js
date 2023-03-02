@@ -4,7 +4,7 @@ import About from "./pages/About/About"
 import Contact from "./pages/Contact/Contact"
 import Dashboard from "./pages/Dashbord/Dashboard"
 import Login from "./pages/Login/Login"
-import AddPropertyForm from "./pages/Properties/AddPropertyForm"
+import AddPropertyForm from "./components/AddPropertyForm"
 import Properties from "./pages/Properties/Properties"
 import Tenants from "./pages/Tenants/Tenants"
 
