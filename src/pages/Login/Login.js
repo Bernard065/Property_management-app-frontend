@@ -1,7 +1,7 @@
 import React from 'react'
 import LoginForm from './LoginForm'
 // import LoginPic from '../../images/LoginPic.jpg'
-import Logo from '../../images/Logo.png'
+import Logo from '../../images/Homely.png'
 import './Login.css'
 
 const Login = () => {

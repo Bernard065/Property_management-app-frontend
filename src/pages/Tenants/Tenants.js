@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import Navbar from '../Navbar/Navbar'
 import TenantsList from './TenantsList'
-import TopNavBar from '..Navbar/TopNavBar'
+import TopNavBar from '../../components/TopNavBar'
 
 const Tenants = () => {
 
