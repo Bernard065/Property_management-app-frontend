@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 
 
@@ -32,11 +33,14 @@ const PropertiesList = ({ search, property, getProperties }) => {
             </button>
           </div>
           <div className="col">
-            <button
-              className="editBtn"
-            >
-              Edit
-            </button>
+            <Link to="/edit_properties">
+              <button
+                className="editBtn"
+              >
+                Edit
+              </button>
+            </Link>
+           
           </div>
 
         </div>

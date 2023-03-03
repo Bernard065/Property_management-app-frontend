@@ -4,6 +4,7 @@ import { Container, Navbar, Form, FormControl, Button, Row, Col } from 'react-bo
 import Avatar from 'react-avatar'
 import { PlusCircle, BellFill } from 'react-bootstrap-icons'
 
+
 const TopNavBar = ({ setSearch }) => {
 
     const navigate = useNavigate();
@@ -27,6 +28,7 @@ const TopNavBar = ({ setSearch }) => {
                     </Button>
                 </div>
             </Row>
+          
 
             <a href="/">
                 <Row>
