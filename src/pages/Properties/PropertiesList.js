@@ -1,5 +1,7 @@
 import React from 'react'
 
+
+
 const PropertiesList = ({ search, property, getProperties }) => {
 
   const tableData = property
@@ -29,6 +31,14 @@ const PropertiesList = ({ search, property, getProperties }) => {
               Delete
             </button>
           </div>
+          <div className="col">
+            <button
+              className="editBtn"
+            >
+              Edit
+            </button>
+          </div>
+
         </div>
       );
     });
@@ -42,6 +52,9 @@ const PropertiesList = ({ search, property, getProperties }) => {
     });
     alert`Deleted`;
   }
+  
+  
+  
   return (
     <div className='container'>
       <div
@@ -52,7 +65,9 @@ const PropertiesList = ({ search, property, getProperties }) => {
         <div className="table-headers col">Property Type</div>
         <div className="table-headers col">Size in sq feet</div>
         <div className="table-headers col">Delete</div>
+        <div className="table-headers col">Edit</div>
       </div>
+      
       {tableData}
     </div>
   )

@@ -7,6 +7,7 @@ import Login from "./pages/Login/Login"
 import AddPropertyForm from "./components/AddPropertyForm"
 import Properties from "./pages/Properties/Properties"
 import Tenants from "./pages/Tenants/Tenants"
+import EditProperty from "./components/EditProperty"
 
 
 
@@ -16,6 +17,7 @@ const BaseRouter = () => {
         <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/properties" element={<Properties />} />
+            <Route path='/properties/:id' element={<EditProperty />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/contact_us" element={<Contact />} />
             <Route path="/about_us" element={<About />} />
