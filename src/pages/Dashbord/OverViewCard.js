@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 import { Row, Container, Col } from 'react-bootstrap';
-import { HouseDoorFill, PersonFill, CurrencyExchange, GraphDownArrow, LockFill, Speedometer } from 'react-bootstrap-icons';
+import { HouseDoorFill, PersonFill, CurrencyExchange, GraphUpArrow, HouseLockFill, Speedometer } from 'react-bootstrap-icons';
 import OverviewList from './OverViewList'
 
 
@@ -90,7 +90,7 @@ const OverViewCard = () => {
             </Row>
             <Row className="d-flex flex-column">
               <h5 className="overview-header">Monthly Rent Value</h5>
-              <h5 className="overview-content">{`Sh.${monthlyRent}`}</h5>
+              <h5 className="overview-content">{`KSh.${monthlyRent.toLocaleString()}`}</h5>
             </Row>
           </Col>
         </Row>
@@ -103,11 +103,11 @@ const OverViewCard = () => {
                 borderRadius: "15px",
               }}
             >
-              <LockFill size={40} />
+              <HouseLockFill size={40} />
             </Row>
             <Row className="d-flex flex-column">
-              <h5 className="overview-header">Occupancy</h5>
-              <h5 className="overview-content">80%</h5>
+              <h5 className="overview-header">Lease</h5>
+              <h5 className="overview-content">90%</h5>
             </Row>
           </Col>
 
@@ -123,8 +123,8 @@ const OverViewCard = () => {
               <Speedometer size={40} />
             </Row>
             <Row className="d-flex flex-column">
-              <h5 className="overview-header">Economic Vacancy</h5>
-              <h5 className="overview-content">11.33%</h5>
+              <h5 className="overview-header">Vacancy</h5>
+              <h5 className="overview-content">10%</h5>
             </Row>
             {/* <span className="vertical-divider" /> */}
           </Col>
@@ -137,11 +137,11 @@ const OverViewCard = () => {
                 borderRadius: "15px",
               }}
             >
-              <GraphDownArrow size={40} />
+              <GraphUpArrow size={40} />
             </Row>
             <Row className="d-flex flex-column">
-              <h5 className="overview-header">Annual Loss to lease</h5>
-              <h5 className="overview-content">Ksh.894,000</h5>
+              <h5 className="overview-header">Monthy Profits</h5>
+              <h5 className="overview-content">Ksh.18,940,000</h5>
             </Row>
           </Col>
         </Row>

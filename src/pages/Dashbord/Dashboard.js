@@ -7,6 +7,7 @@ import './Dashboard.css'
 const Dashboard = () => {
 
   const [search, setSearch] = useState("");
+  
 
   return (
     <div className="container-fluid">
@@ -24,7 +25,7 @@ const Dashboard = () => {
         >
           <TopNavBar setSearch={setSearch} search={search} />
           <div className="Greeting-text row mx-5 my-4">
-            <p>Hello, Chris</p>
+            <p>Hello, Bernard</p>
           </div>
           <OverViewCard />
         </div>
