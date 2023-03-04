@@ -11,40 +11,34 @@ const LoginForm = () => {
         navigate("/dashboard");
     };
   return (
-    <div>
-        <p style={{fontSize :"1.2rem"}}>Member Access</p>
-        <p className="header-1">Sign In</p>
-        <p style={{fontSize :"0.9rem"}}>
-        Don’t have an account? Register{" "}
-        <span>
-          <a href="/register">Here</a>
-        </span>
-        </p>
-        <Form onSubmit={onSubmit}>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="example@email.com" />
-                <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-                </Form.Text>
-            </Form.Group>
+    <Form onSubmit={onSubmit} className="login-form">
+      <h1 className="login-heading">Sign In</h1>
+      <Form.Group controlId="formBasicEmail">
+        <Form.Label>Email address</Form.Label>
+        <Form.Control type="email" placeholder="example@email.com" />
+      </Form.Group>
 
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control
-            type="password"
-            placeholder="at least 4 characters strong"/>
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                <Form.Check type="checkbox" label="Remember Me?" />
-            </Form.Group>
-            <Button variant="primary" type="submit" className="btn-block px-5">Login</Button>
-             <br />
-            <div className="forgot-pass">
-                <a href="\">Forgot your password?</a>
-            </div>
-        </Form>
-    </div>
+      <Form.Group controlId="formBasicPassword">
+        <Form.Label>Password</Form.Label>
+        <Form.Control type="password" placeholder="at least 4 characters strong" />
+      </Form.Group>
+
+      <Form.Group controlId="formBasicCheckbox">
+        <Form.Check type="checkbox" label="Remember Me?" />
+      </Form.Group>
+
+      <Button variant="primary" type="submit" className="btn-block px-5">
+        Login
+      </Button>
+
+      <p className="forgot-password">
+        Forgot <a href="/">password?</a>
+      </p>
+
+      <p className="register-link">
+        Don’t have an account? <a href="/register">Register now</a>
+      </p>
+    </Form>
   )
 }
 
