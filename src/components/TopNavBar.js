@@ -13,12 +13,14 @@ const TopNavBar = ({ setSearch }) => {
     <Navbar className='nav-bar' expand='lg' variant='light'>
         <Container fluid>
             <Row>
-                <Form className="d-flex">
-                    <FormControl type="search" placeholder="Search" className="me-2" aria-label="Search" onChange={(e) => {
-                        setSearch(e.target.value);
-                    }}
-                    />
-                </Form>
+                <div>
+                    <Form className="d-flex">
+                        <FormControl type="search" placeholder="Search by Property name" className="me-2" aria-label="Search" onChange={(e) => {
+                            setSearch(e.target.value);
+                        }}
+                        />
+                    </Form>
+                </div>
                 <div className="nav-bar-button">
                     <Button onClick={() => {
                         navigate("/add_property");

@@ -78,7 +78,7 @@ const AddPropertyForm = () => {
           style={{maxWidth:"40%"}}
             property_name="property_name"
             type="text"
-            placeholder="Lavington Heights"
+            placeholder="Mr. Bens Residents"
             onChange={(e) => setPropertyName(e.target.value)}
           />
         </Form.Group>
@@ -108,7 +108,7 @@ const AddPropertyForm = () => {
           style={{maxWidth:"40%"}}
             type="text"
             location="location"
-            placeholder="Neighborhood e.g Kilimani"
+            placeholder="Kahawa Sukari"
             onChange={(e) => setLocation(e.target.value)}
           />
         </Form.Group>
@@ -120,7 +120,7 @@ const AddPropertyForm = () => {
           style={{maxWidth:"40%"}}
             tenant_name="tenant_name"
             type="text"
-            placeholder="Sam Smith"
+            placeholder="Bernard Bebeni"
             onChange={(e) => setTenant(e.target.value)}
           />
         </Form.Group>
@@ -130,7 +130,7 @@ const AddPropertyForm = () => {
           style={{maxWidth:"40%"}}
             email="email"
             type="email"
-            placeholder="johndoe@yahoo.com"
+            placeholder="bebeni@gmail.com"
             onChange={(e) => setEmail(e.target.value)}
           />
         </Form.Group>
@@ -140,7 +140,7 @@ const AddPropertyForm = () => {
           style={{maxWidth:"40%"}}
             phone_number="phone_number"
             type="integer"
-            placeholder="0712345678"
+            placeholder="0715012201"
             onChange={(e) => setPhoneNumber(e.target.value)}
           />
         </Form.Group>

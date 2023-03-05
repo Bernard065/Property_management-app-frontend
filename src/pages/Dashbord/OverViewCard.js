@@ -8,7 +8,7 @@ import OverviewList from './OverViewList'
 const OverViewCard = () => {
 
   const baseUrl = "http://localhost:9292/";
-  // get active tenants
+
   const [active, setActive] = useState("");
   const [total, setTotal] = useState("");
   const [monthlyRent, setMonthRent] = useState("");

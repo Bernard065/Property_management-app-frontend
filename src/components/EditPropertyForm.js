@@ -60,7 +60,6 @@ const EditPropertyForm = () => {
           style={{maxWidth:"40%"}}
             property_name="property_name"
             type="text"
-            placeholder="Lavington Heights"
             onChange={(e) => setPropertyName(e.target.value)}
           />
         </Form.Group>
@@ -70,7 +69,6 @@ const EditPropertyForm = () => {
             style={{maxWidth:"40%"}}
             property_type="property_type"
             type="text"
-            placeholder="Apartment"
             onChange={(e) => setPropertyType(e.target.value)}
           />
         </Form.Group>
@@ -80,7 +78,6 @@ const EditPropertyForm = () => {
             style={{maxWidth:"40%"}}
             property_size="property_size"
             type="integer"
-            placeholder=" ie 3 Bedrooms"
             onChange={(e) => setPropertySize(e.target.value)}
           />
         </Form.Group>
@@ -90,7 +87,6 @@ const EditPropertyForm = () => {
           style={{maxWidth:"40%"}}
             type="text"
             location="location"
-            placeholder="Neighborhood e.g Kilimani"
             onChange={(e) => setLocation(e.target.value)}
           />
         </Form.Group>
