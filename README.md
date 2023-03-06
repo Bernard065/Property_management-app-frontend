@@ -27,6 +27,10 @@ To run this application on your local machine, you need to follow these steps:
 4. Open your browser and go to http://localhost:3000
 
 
+## Deployment
+[https://property-management-app-frontend-alpha.vercel.app/]
+
+
 
 ## Contributors of this project include:
 Bernard Omboga
